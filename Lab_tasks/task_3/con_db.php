@@ -5,5 +5,5 @@
 	$pwd = '';
 	/*Connection*/
 $dbCon = mysqli_connect($host, $userName, $pwd, $dbName);
-@define("BASE", "http://localhost/final/PHP_CRUD/Lab_tasks/task_3/");
+@define("BASE", "http://localhost/final/Lab_tasks/task_3/");
 ?>
