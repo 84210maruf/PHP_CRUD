@@ -1,0 +1,17 @@
+Procedure Step by Step for INSERTION
+------------------------------------------------------------------
+1. Design Input FORM
+2. Add Action Page/ Call Action Page (php type Page)
+3. Create/Write Database Connection Code in PHP
+4. Go to action Page:
+     4.1. Connect Database with action Page
+     4.2. If Button (Insert) Click
+	a. Collect Values from FORM in variables
+	b. Serialize the variable input as per Data Tables
+	c. Write SQL for Insertion
+	d. Execute Query
+	e. If Success Then
+		i. Show Success Message
+	    Else
+		ii. Error Message
+5. Go To Main Page
