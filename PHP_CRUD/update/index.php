@@ -14,9 +14,24 @@ if(!$conn){
 //  UPDETE DATA
 //Collect and submit data
 
+if (isset($_POST['submit'])){
+    
+    $userid=$_POST['id'];
+    $username=$_POST['username'];
+    $email=$_POST['email'];
+    $password = $_POST['password'];
 
+    $sql = "UPDATE user_info SET username='$username',email='$email',password='$password' WHERE id='$userid'";
+
+    if (mysqli_query($conn, $sql)) {
+        echo "table created successfully";
+    } else {
+        echo "Error creating tables: " . mysqli_error($conn);
+    }
 
     mysqli_close($conn);
+}
+
 
 
 ?>
