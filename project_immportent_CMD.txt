@@ -1,0 +1,13 @@
+........Laravel project........
+
+install...
+1. composer
+2. xampp
+
+Note : first setup xammp then pest the composer.exe file in C:/xampp folder
+       then run comper.exe
+CMD..........
+
+1.CMD: composer create-project laravel/laravel Hospital_managment_laravel [for create a new project]
+2. CMD: php artisan serve  [for run project]
+3..env file set database name & create same dabase in xampp.
