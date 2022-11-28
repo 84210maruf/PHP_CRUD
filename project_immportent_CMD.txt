@@ -11,3 +11,12 @@ CMD..........
 1.CMD: composer create-project laravel/laravel Hospital_managment_laravel [for create a new project]
 2. CMD: php artisan serve  [for run project]
 3..env file set database name & create same dabase in xampp.
+4. CMD: composer require laravel/jetstream [install all require file]
+5. CMD: php artisan jetstream:install livewire
+6. CMD: npm install
+7. CMD: npm run dev
+
+8: CMD: php artisan migrate [after change in the table]
+9: CMD: php artisanmigrate:reset [if any err & again migrate]
+10:CMD: php artisan make:model Doctor -m [create model]
+11:CMD: php artisan make:controller HomeController[make controller]
