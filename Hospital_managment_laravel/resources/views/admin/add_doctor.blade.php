@@ -12,9 +12,22 @@
         <!--admin/body.blade.php-->
         @include('admin.navbar')
         <!-- partial -->
+
+       
+
+
         <!--admin/navbar.blade.php-->
         <div class="container-fluid page-body-wrapper">
         <div class="container" align="center" style="padding-top: 100px;">
+
+        <!--message-->
+        @if(session()->has('message'))
+          <div class="alert alert-success">
+            <button type="button" class="close" data-dismiss="alert">
+            </button>
+          {{session()->get('message')}}
+          </div>
+          @endif
         
         <form action="{{url('upload_doctor')}}" method="POST" enctype=multipart/form-data>
 
@@ -22,11 +35,11 @@
 
         <div style="padding:15px;">
             <label>Doctor Name</label>
-            <input type="text" style="color:black" name="name" placeholder="Write the name">
+            <input type="text" style="color:black" name="name" placeholder="Write the name" required="">
         </div>
         <div style="padding:15px;">
             <label>Doctor Number</label>
-            <input type="text" style="color:black" name="number" placeholder="Write the number">
+            <input type="text" style="color:black" name="number" placeholder="Write the number" required="">
         </div>
         <div style="padding:15px;">
             <label>Speciality</label>
@@ -40,11 +53,11 @@
         </div>
         <div style="padding:15px;">
             <label>Room No</label>
-            <input type="text" style="color:black" name="room" placeholder="Write the room no..">
+            <input type="text" style="color:black" name="room" placeholder="Write the room no.." required="">
         </div>
         <div style="padding:15px;">
             <label>Doctor Image</label>
-            <input type="file" name="file">
+            <input type="file" name="file" required="">
         </div>
         <div style="padding:15px;">
             <input type="submit" class="btn btn-success">

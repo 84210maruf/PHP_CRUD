@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
       @include('admin.css')
 
       <!-- partial:partials/_sidebar.html -->

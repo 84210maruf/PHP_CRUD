@@ -18,5 +18,6 @@ CMD..........
 
 8: CMD: php artisan migrate [after change in the table]
 9: CMD: php artisanmigrate:reset [if any err & again migrate]
-10:CMD: php artisan make:model Doctor -m [create model]
+10:CMD: php artisan make:model Doctor -m [create model/Table]
+11:CMD: php artisan make:model Appoinment -m [create model/Table]
 11:CMD: php artisan make:controller HomeController[make controller]
